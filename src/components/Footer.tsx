@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-           <img src="src/assets/oritto ornage logo 1.0.png" alt="Logo image" className="size-24" />
+           <img src="src/assets/logo.png" alt="Logo image" className="size-24" />
           </div>
             <p className="text-gray-400 leading-relaxed">
               Illuminate your world with premium LED lighting solutions. Energy

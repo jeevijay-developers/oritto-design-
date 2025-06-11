@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-           <img src="src/assets/oritto ornage logo 1.0.png" alt="Logo image" className="size-24" />
+           <img src="src/assets/logo.png" alt="Logo image" className="size-24" />
           </div>
 
           {/* Desktop Navigation */}
