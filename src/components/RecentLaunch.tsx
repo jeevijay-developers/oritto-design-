@@ -114,7 +114,7 @@ const RecentLaunch = () => {
                 {/* Action buttons */}
                 <div className="flex space-x-2">
                   <button className="flex-1 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition-colors font-semibold">
-                    Add to Cart
+                    Send Query
                   </button>
                   <button className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
                     ♡

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Search, ShoppingCart, User, Menu, X } from 'lucide-react';
+import { ChevronDown, Search, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -85,9 +85,9 @@ const Navbar = () => {
           {/* Icons */}
           <div className="flex items-center space-x-4">
             <Search className="w-5 h-5 text-gray-600 hover:text-red-500 cursor-pointer transition-colors" />
-            <ShoppingCart className="w-5 h-5 text-gray-600 hover:text-red-500 cursor-pointer transition-colors" />
+            {/* <ShoppingCart className="w-5 h-5 text-gray-600 hover:text-red-500 cursor-pointer transition-colors" />
             <User className="w-5 h-5 text-gray-600 hover:text-red-500 cursor-pointer transition-colors" />
-            
+             */}
             {/* Mobile menu button */}
             <button
               className="md:hidden"
