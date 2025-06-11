@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import { ChevronDown, Search, Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown, Search, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const lightingSolutions = [
-    'Home Solutions',
-    'Retail Solutions', 
-    'Office Solutions',
-    'Industrial Solutions',
-    'Outdoor Solutions',
-    'Hospitality Solutions',
-    'Road Solutions',
-    'Area Solutions',
-    'Landscape Solutions',
-    'Commercial Solutions'
+    "Home Solutions",
+    "Retail Solutions",
+    "Office Solutions",
+    "Industrial Solutions",
+    "Outdoor Solutions",
+    "Hospitality Solutions",
+    "Road Solutions",
+    "Area Solutions",
+    "Landscape Solutions",
+    "Commercial Solutions",
   ];
 
   return (
@@ -42,17 +42,24 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold">
-              <span className="text-red-500">oriito</span>
-              <div className="text-xs text-gray-600 -mt-1">LED Lights GLOW HIGH</div>
+              <span className="text-red-500">oritto</span>
+              <div className="text-xs text-gray-600 -mt-1">
+                LED Lights GLOW HIGH
+              </div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">About Us</a>
-            
+            <a
+              href="#"
+              className="text-gray-700 hover:text-red-500 transition-colors"
+            >
+              About Us
+            </a>
+
             {/* Lighting Solutions Dropdown */}
-            <div 
+            <div
               className="relative"
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
@@ -61,7 +68,7 @@ const Navbar = () => {
                 <span>Lighting Solutions</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              
+
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-xl rounded-lg border border-gray-200 py-2">
                   {lightingSolutions.map((solution, index) => (
@@ -77,9 +84,24 @@ const Navbar = () => {
               )}
             </div>
 
-            <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">Quality</a>
-            <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">Offers</a>
-            <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">Support</a>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-red-500 transition-colors"
+            >
+              Quality
+            </a>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-red-500 transition-colors"
+            >
+              Offers
+            </a>
+            <a
+              href="#"
+              className="text-gray-700 hover:text-red-500 transition-colors"
+            >
+              Support
+            </a>
           </div>
 
           {/* Icons */}
@@ -106,9 +128,14 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-4">
-              <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">About Us</a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-red-500 transition-colors"
+              >
+                About Us
+              </a>
               <div>
-                <button 
+                <button
                   className="flex items-center justify-between w-full text-gray-700 hover:text-red-500 transition-colors"
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 >
@@ -129,9 +156,24 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">Quality</a>
-              <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">Offers</a>
-              <a href="#" className="text-gray-700 hover:text-red-500 transition-colors">Support</a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-red-500 transition-colors"
+              >
+                Quality
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-red-500 transition-colors"
+              >
+                Offers
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-red-500 transition-colors"
+              >
+                Support
+              </a>
             </div>
           </div>
         )}
