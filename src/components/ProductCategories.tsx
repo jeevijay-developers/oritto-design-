@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, ShoppingCart } from "lucide-react";
+import { Star, } from "lucide-react";
 
 const ProductCategories = () => {
   const categories = [
@@ -242,7 +242,7 @@ const ProductCategories = () => {
                         {product.price}
                       </span>
                       <button className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-lg transition-colors">
-                        <ShoppingCart className="w-4 h-4" />
+                        Send Query
                       </button>
                     </div>
                   </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star } from 'lucide-react';
+import { Star, Share } from "lucide-react";
 
 const RecentLaunch = () => {
   const products = [
@@ -46,10 +46,13 @@ const RecentLaunch = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Recent Launch</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            Recent Launch
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our latest LED lighting innovations designed to brighten your environment
-            with cutting-edge technology and superior performance.
+            Discover our latest LED lighting innovations designed to brighten
+            your environment with cutting-edge technology and superior
+            performance.
           </p>
         </div>
 
@@ -72,8 +75,12 @@ const RecentLaunch = () => {
               {/* Product Info */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-                  <span className="text-sm text-gray-500">{product.wattage}</span>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {product.name}
+                  </h3>
+                  <span className="text-sm text-gray-500">
+                    {product.wattage}
+                  </span>
                 </div>
 
                 {/* Rating */}
@@ -84,13 +91,15 @@ const RecentLaunch = () => {
                         key={i}
                         className={`w-4 h-4 ${
                           i < Math.floor(product.rating)
-                            ? 'text-yellow-400 fill-current'
-                            : 'text-gray-300'
+                            ? "text-yellow-400 fill-current"
+                            : "text-gray-300"
                         }`}
                       />
                     ))}
                   </div>
-                  <span className="text-sm text-gray-600 ml-2">({product.rating})</span>
+                  <span className="text-sm text-gray-600 ml-2">
+                    ({product.rating})
+                  </span>
                 </div>
 
                 {/* Color options */}
@@ -106,8 +115,12 @@ const RecentLaunch = () => {
                 {/* Price */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
-                    <span className="text-lg font-bold text-red-600">{product.salePrice}</span>
-                    <span className="text-sm text-gray-500 line-through">{product.originalPrice}</span>
+                    <span className="text-lg font-bold text-red-600">
+                      {product.salePrice}
+                    </span>
+                    <span className="text-sm text-gray-500 line-through">
+                      {product.originalPrice}
+                    </span>
                   </div>
                 </div>
 
@@ -116,8 +129,8 @@ const RecentLaunch = () => {
                   <button className="flex-1 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition-colors font-semibold">
                     Send Query
                   </button>
-                  <button className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
-                    ♡
+                  <button className="px-4 py-2 text-white bg-red-400 border border-gray-300 rounded-lg hover:bg-orange-900 transition-colors">
+                    <Share />
                   </button>
                 </div>
               </div>
