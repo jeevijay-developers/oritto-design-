@@ -17,10 +17,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div>
-              <h3 className="text-2xl font-bold text-red-500 mb-2">oritto</h3>
-              <p className="text-gray-400 text-sm">LED Lights GLOW HIGH</p>
-            </div>
+            <div className="flex items-center">
+           <img src="src/assets/oritto ornage logo 1.0.png" alt="Logo image" className="size-24" />
+          </div>
             <p className="text-gray-400 leading-relaxed">
               Illuminate your world with premium LED lighting solutions. Energy
               efficient, long-lasting, and eco-friendly lighting for every need.
